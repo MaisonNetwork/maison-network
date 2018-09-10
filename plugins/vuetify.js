@@ -17,11 +17,7 @@ import {
   VTextField,
   VToolbar,
   VDialog,
-  vParallax,
-  vRangeSlider,
-  VToolTip,
   VTabs,
-  
   VSlider,
   VStepper,
   VSelect
@@ -42,12 +38,8 @@ Vue.use(Vuetify, {
     VIcon,
     VImg,
     VGrid,
-    vParallax,
-    vRangeSlider,
-    VTextField,
-    
+    VTextField,  
     VToolbar,
-    VToolTip,
     VDialog,
     VTabs,
     VSlider,
