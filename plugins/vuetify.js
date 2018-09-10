@@ -18,6 +18,7 @@ import {
   VToolbar,
   VDialog,
   VTabs,
+  VRangeSlider,
   VSlider,
   VStepper,
   VSelect
@@ -42,6 +43,7 @@ Vue.use(Vuetify, {
     VToolbar,
     VDialog,
     VTabs,
+    VRangeSlider,
     VSlider,
     VSelect,
     VStepper
