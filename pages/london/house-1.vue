@@ -5,7 +5,7 @@
         <v-img src="http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg" width="400px" height="400px"/>
         <v-layout class="pl-3 pt-3" column>
           <h2>3 Bed Maisonette For Rent</h2>
-          <p class="subheading grey--text">Do Gok Dong Gangnam, Seoul</p>
+          <p class="subheading grey--text">Gangnam, Seoul</p>
           <h1>$2000 p/m</h1>
           <p class="subheading grey--text">($100 per sq m)</p>
             <v-card flat color="transparent" width=50px>
