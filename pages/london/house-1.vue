@@ -21,7 +21,7 @@
           6 Bed Room Penthouse
         </v-card-title>
         <v-card-text class="grey--text">
-          Webber Street, London SE1 
+          Gangnam, Seoul 
         </v-card-text>
         <v-form class="px-4" ref="form" v-model="valid" lazy-validation>
           <v-text-field
