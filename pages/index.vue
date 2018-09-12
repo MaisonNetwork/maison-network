@@ -83,7 +83,7 @@ export default {
    data() {
      return {
     cards: [
-      { title: 'Webber st', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 6, link: "/london/house-1", price: "4900" },
+      { title: 'Tower Palace A', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 6, link: "/london/house-1", price: "4900" },
       { title: 'Bonham avenue', src: 'https://colorlib.com/preview/theme/tough/images/bg_1.jpg', flex: 6, link: "/london/house-1", price: "3500" },
       { title: 'Hill 36', src: 'https://colorlib.com/preview/theme/tough/images/image_3.jpg', flex: 6, link: "/london/house-1", price: "1600" },
       { title: 'Bond Row', src: 'https://i.imgur.com/PV6UjK7.jpg', flex: 6, link: "/london/house-1", price: "2500" },
