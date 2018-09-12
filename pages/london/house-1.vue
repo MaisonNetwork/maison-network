@@ -45,7 +45,7 @@
             required
           ></v-select>
           <v-text-field
-            value="$1000"
+            value="$10,000"
             label="deposit"
             readonly
           ></v-text-field>
