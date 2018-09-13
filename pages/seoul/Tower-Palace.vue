@@ -2,7 +2,7 @@
   <v-layout column align-center justify-space-between>
     <v-card flat color="transparent" class="mt-3" width="1000">
       <v-layout row justify-space-between>
-        <v-img src="http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg" width="400px" height="400px"/>
+        <v-img src="https://i.imgur.com/Yqc5u9G.jpg" width="400px" height="400px"/>
         <v-layout class="pl-3 pt-3" column>
           <h2>6 Bed Room Penthouse For Rent</h2>
           <p class="subheading grey--text">Gangnam, Seoul</p>

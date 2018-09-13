@@ -83,7 +83,7 @@ export default {
    data() {
      return {
     cards: [
-      { title: 'Tower Palace A', src: 'http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg', flex: 6, link: "/Seoul/Tower-Palace", price: "4900" },
+      { title: 'Tower Palace A', src: 'https://i.imgur.com/Yqc5u9G.jpg', flex: 6, link: "/Seoul/Tower-Palace", price: "4900" },
       { title: 'Bonham avenue', src: 'https://colorlib.com/preview/theme/tough/images/bg_1.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "3500" },
       { title: 'Hill 36', src: 'https://colorlib.com/preview/theme/tough/images/image_3.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "1600" },
       { title: 'Bond Row', src: 'https://i.imgur.com/PV6UjK7.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "2500" },
