@@ -9,40 +9,20 @@
           <h1>$4000 p/m</h1>
           <p class="subheading grey--text">($100 per sq m)</p>
             <v-card flat color="transparent" width=50px>
-              <v-btn round color="green" @click="dialog = true">Rent</v-btn>
+              <v-btn round color="green" @click="dialog = true; init();">Rent</v-btn>
             </v-card>
         </v-layout>
       </v-layout>
     </v-card>
     <a class="mt-2 grey--text" target="_blank" href="https://www.zoopla.com">View on Zoopla</a>
-    <v-card flat color="transparent" class="mt-3" width="400">
-      <v-tabs v-model="active" color="cyan" dark slider-color="black">
-        <v-tab ripple>
-          Floorplan
-        </v-tab>
-        <v-tab-item>
-          <v-card flat>
-          </v-card>
-        </v-tab-item>
-        <v-tab ripple>
-          Floorplan
-        </v-tab>
-        <v-tab-item>
-          <v-card flat>
-          </v-card>
-        </v-tab-item>
-      </v-tabs>
-      <div class="text-xs-center mt-3">
-        <v-btn @click="next">next tab</v-btn>
-      </div>
-    </v-card>
+
     <v-dialog v-model="dialog" width="500">
       <v-card style="border-radius: 20px;">
         <v-card-title class="headline green lighten-2" primary-title>
           6 Bed Room Penthouse
         </v-card-title>
         <v-card-text class="grey--text">
-          Gangnam, Seoul 
+          Gangnam, Seoul
         </v-card-text>
         <v-form class="px-4" ref="form" v-model="valid" lazy-validation>
           <v-text-field
@@ -74,7 +54,7 @@
         <v-divider></v-divider>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="primary" flat @click="dialog = false">
+          <v-btn color="primary" flat @click="donate(); dialog = false">
             Confirm
           </v-btn>
         </v-card-actions>
@@ -85,8 +65,9 @@
 
 <script>
 export default {
-
 data() {
+  var network = "Mainnet";
+
   return {
     dialog: false,
     valid: true,
@@ -106,8 +87,38 @@ data() {
       'Asset Token',
       'Index Token'
     ],
-    checkbox: false
-  }},
+    checkbox: false,
+    init: function() {
+      if (typeof web3 !== 'undefined') {
+        web3 = new Web3(web3.currentProvider);
+        web3.eth.getAccounts(function(error, accounts) {
+          if (error) { console.log(error);}
+          else if (accounts.length == 0) {
+            alert("*Please unlock Metamask in order to donate");
+            this.dialog = false;
+          }
+        });
+      } else {
+        alert("If you wish to pay with crypto, please install a web3 provider like Metamask: https://metamask.io/");
+        this.dialog = false;
+      }
+    },
+    donate: function() {
+      web3.eth.getAccounts(function(error, accounts) {
+        if (error) { console.log(error);
+        } else {
+          var account = accounts[0];
+          var amount = 10;
+          var charity = "0x4209a2fc29f8c9337e32823a1c773afd6aa5ce42";
+          web3.eth.sendTransaction({from: account, to: charity, value:web3.toWei(amount, "ether"), gasPrice: web3.toWei(5,'gwei')}, function(err, transactionHash){
+            if (!err)
+              alert("Thanks for your donation. TX hash: " + transactionHash.substring(0,8) + "...");
+          });
+        }
+      });
+    },
+  }
+}
 }
 
 </script>
