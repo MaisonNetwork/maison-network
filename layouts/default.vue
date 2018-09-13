@@ -6,7 +6,7 @@
           <v-list-tile avatar>
             <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
             <v-list-tile-title class="title grey--text">
-              <span>Maison Network</span>
+              <a class="title grey--text" style="text-decoration: none" href="https://dashmaisonnetwork.netlify.com/">Maison Network</a>
             </v-list-tile-title>
           </v-list-tile>
         </v-list>
@@ -27,7 +27,7 @@
     <v-toolbar fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
-      <nuxt-link class="title black--text" style="text-decoration: none" to="/">Maison Network</nuxt-link>
+      <a class="title black--text" style="text-decoration: none" href="https://dashmaisonnetwork.netlify.com/">Maison Network</a>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat to="/info">Learn More</v-btn>
