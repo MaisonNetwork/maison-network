@@ -20,9 +20,9 @@
             :min="1500"
             :step="100"
             flat
-            ></v-range-slider>  
+            ></v-range-slider>
           </v-card>
-          <v-card flat color="transparent" width="100px">  
+          <v-card flat color="transparent" width="100px">
             <div
             v-text="`$${price[1]}`"
             class="mt-3 ml-5"
@@ -38,9 +38,9 @@
       <v-card flat color="transparent" width="400">
         <div>
         Equity accrued after five years: between <strong>{{price[0]/1000}}%</strong> and <strong>{{price[1]/1000}}%</strong>
-        </div>  
+        </div>
       </v-card>
-      <v-flex xs12 sm6>  
+      <v-flex xs12 sm6>
         <v-card width="1000" flat color="transparent">
           <v-container fluid grid-list-md>
             <v-layout row wrap>
@@ -83,12 +83,12 @@ export default {
    data() {
      return {
     cards: [
-      { title: 'Tower Palace A', src: 'http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg', flex: 6, link: "/london/house-1", price: "4900" },
-      { title: 'Bonham avenue', src: 'https://colorlib.com/preview/theme/tough/images/bg_1.jpg', flex: 6, link: "/london/house-1", price: "3500" },
-      { title: 'Hill 36', src: 'https://colorlib.com/preview/theme/tough/images/image_3.jpg', flex: 6, link: "/london/house-1", price: "1600" },
-      { title: 'Bond Row', src: 'https://i.imgur.com/PV6UjK7.jpg', flex: 6, link: "/london/house-1", price: "2500" },
-      { title: 'Clapham Junction', src: 'https://i.imgur.com/IzbtiNU.jpg', flex: 6, link: "/london/house-1", price: "3500" },
-      { title: 'Cotswold', src: 'http://zaghlulalnaggar.com/wp-content/uploads/2017/11/wunderbar-maison-kayser-pickle-margiela-http-www-maisondupuy-com-premiere-maisonette-sneakers-harlem-louis-marie-kitsune-menu-hugo-du-chocolat-francis-de.jpg', flex: 6, link: "/london/house-1", price: "4500" }
+      { title: 'Tower Palace A', src: 'http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg', flex: 6, link: "/Seoul/Tower-Palace", price: "4900" },
+      { title: 'Bonham avenue', src: 'https://colorlib.com/preview/theme/tough/images/bg_1.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "3500" },
+      { title: 'Hill 36', src: 'https://colorlib.com/preview/theme/tough/images/image_3.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "1600" },
+      { title: 'Bond Row', src: 'https://i.imgur.com/PV6UjK7.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "2500" },
+      { title: 'Clapham Junction', src: 'https://i.imgur.com/IzbtiNU.jpg', flex: 6, link: "/seoul/Tower-Palace", price: "3500" },
+      { title: 'Cotswold', src: 'http://zaghlulalnaggar.com/wp-content/uploads/2017/11/wunderbar-maison-kayser-pickle-margiela-http-www-maisondupuy-com-premiere-maisonette-sneakers-harlem-louis-marie-kitsune-menu-hugo-du-chocolat-francis-de.jpg', flex: 6, link: "/Seoul/Tower-Palace", price: "4500" }
     ],
     price: [1500, 5000]
    }
