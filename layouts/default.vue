@@ -3,11 +3,10 @@
     <v-navigation-drawer v-model="drawer" enable-resize-watcher app temporary>
       <v-toolbar flat>
         <v-list>
-          <v-list-tile>
-            <v-img src="@static/logo.png" height="50px"/>
-
+          <v-list-tile avatar>
+            <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
             <v-list-tile-title class="title grey--text">
-              Maison Network
+              <span>Maison Network</span>
             </v-list-tile-title>
           </v-list-tile>
         </v-list>
@@ -27,6 +26,7 @@
     </v-navigation-drawer>
     <v-toolbar fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
       <nuxt-link class="title black--text" style="text-decoration: none" to="/">Maison Network</nuxt-link>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
