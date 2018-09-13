@@ -6,13 +6,16 @@
           <v-list-tile avatar>
             <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
             <v-list-tile-title class="title grey--text">
-              <a class="title grey--text" style="text-decoration: none" href="https://dashmaisonnetwork.netlify.com/">Maison Network</a>
+              <span>Maison Network</span>
             </v-list-tile-title>
           </v-list-tile>
         </v-list>
     </v-toolbar>
     <v-divider></v-divider>
     <v-list>
+      <v-list-tile href="https://dashmaisonnetwork.netlify.com/">
+        Dashboard
+      </v-list-tile>
       <v-list-tile
       v-for="item in items"
       :key="item.title"
@@ -27,10 +30,10 @@
     <v-toolbar fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
       <img src="../static/logo.png" style="padding:5px;width:48px;height:44px"/>
-      <a class="title black--text" style="text-decoration: none" href="https://dashmaisonnetwork.netlify.com/">Maison Network</a>
+      <nuxt-link class="title black--text" style="text-decoration: none" to="/">Maison Network</nuxt-link>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat to="/info">Learn More</v-btn>
+        <v-btn flat href="https://dashmaisonnetwork.netlify.com/">Dashboard</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
