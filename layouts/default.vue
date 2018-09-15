@@ -40,7 +40,7 @@
       <nuxt/>
     </v-content>
     <v-footer :fixed="true" app>
-      <span class="ml-5">&copy; Maison Network 2018. An Xalpha Protocol.</span>
+      <span class="ml-5">&copy; Xalpha 2018</span>
     </v-footer>
   </v-app>
 </template>

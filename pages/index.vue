@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-layout column align-center justify-space-between>
-      <v-card flat color="transparent">
+      <v-card class="hidden-sm-and-down" flat color="transparent">
         <v-layout class="mt-3" row>
           <v-card flat color="transparent" width="100px">
             <div
@@ -35,13 +35,13 @@
           </v-card>
         </v-layout>
       </v-card>
-      <v-card flat color="transparent" width="400">
+      <v-card flat class="hidden-sm-and-down" color="transparent" width="400">
         <div>
         Equity accrued after five years: between <strong>{{price[0]/1000}}%</strong> and <strong>{{price[1]/1000}}%</strong>
         </div>
       </v-card>
       <v-flex xs12 sm6>
-        <v-card width="1000" flat color="transparent">
+        <v-card flat color="transparent">
           <v-container fluid grid-list-md>
             <v-layout row wrap>
               <v-flex v-for="card in filteredCards" v-bind="{ [`xs${card.flex}`]: true }" :key="card.title">

@@ -1,8 +1,7 @@
 <template>
-  <v-layout column align-center justify-space-between>
-    <v-card flat color="transparent" class="mt-3" width="1000">
-      <v-layout row justify-space-between>
-        <v-card flat color="transparent" width="500">
+  <v-layout :class="{'pa-0': $vuetify.breakpoint.xsAndDown, 'pa-5': $vuetify.breakpoint.smAndUp}">
+      <v-layout row wrap>
+        <v-flex xs12 md6>
           <v-carousel>
             <v-carousel-item
             v-for="(item,i) in photos"
@@ -10,24 +9,29 @@
             :src="item.src"
             ></v-carousel-item>
           </v-carousel>
-          <a class="mt-2 grey--text" target="_blank" href="https://www.zoopla.co.uk/">View on Zoopla</a>
-         </v-card>
-        <v-layout class="pl-3 pt-3" column>
-          <h1>6 Bed Room Penthouse For Rent</h1>
-          <p class="subheading grey--text">Gangnam, Seoul</p>
-          <h1>$4000 p/m</h1>
-          <p class="subheading grey--text">($100 per sq m)</p>
-            <v-card flat color="transparent" width=50px>
-              <v-btn outline round color="green" @click="dialog = true; init();">Rent</v-btn>
-            </v-card>
-        </v-layout>
+        </v-flex>
+        <v-flex xs12 md6>
+          <v-layout class="pa-3" column>
+            <v-layout row wrap>
+              <h1>6 Bedroom Penthouse</h1>
+              <v-chip class="ml-3 hidden-sm-and-down">For Rent</v-chip>
+            </v-layout>
+            <p class="subheading grey--text">Gangnam, Seoul</p>
+            <div>
+            </div>
+            <h1>$4000 p/m</h1>
+            <p class="subheading grey--text">($100 per sq m)</p>
+            <div>
+              <v-btn outline large round color="green" @click="dialog = true; init();">Rent</v-btn>
+            </div>  
+          </v-layout>
+        </v-flex>
       </v-layout>
-    </v-card>
 
     <v-dialog v-model="dialog" width="500">
       <v-card style="border-radius: 20px;">
         <v-card-title class="headline green lighten-2" primary-title>
-          6 Bed Room Penthouse
+          6 Bedroom Penthouse
         </v-card-title>
         <v-card-text class="grey--text">
           Gangnam, Seoul
