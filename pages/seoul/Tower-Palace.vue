@@ -2,19 +2,27 @@
   <v-layout column align-center justify-space-between>
     <v-card flat color="transparent" class="mt-3" width="1000">
       <v-layout row justify-space-between>
-        <v-img src="https://i.imgur.com/Yqc5u9G.jpg" width="400px" height="400px"/>
+        <v-card flat color="transparent" width="500">
+          <v-carousel>
+            <v-carousel-item
+            v-for="(item,i) in photos"
+            :key="i"
+            :src="item.src"
+            ></v-carousel-item>
+          </v-carousel>
+          <a class="mt-2 grey--text" target="_blank" href="https://www.zoopla.co.uk/">View on Zoopla</a>
+         </v-card>
         <v-layout class="pl-3 pt-3" column>
-          <h2>6 Bed Room Penthouse For Rent</h2>
+          <h1>6 Bed Room Penthouse For Rent</h1>
           <p class="subheading grey--text">Gangnam, Seoul</p>
           <h1>$4000 p/m</h1>
           <p class="subheading grey--text">($100 per sq m)</p>
             <v-card flat color="transparent" width=50px>
-              <v-btn round color="green" @click="dialog = true; init();">Rent</v-btn>
+              <v-btn outline round color="green" @click="dialog = true; init();">Rent</v-btn>
             </v-card>
         </v-layout>
       </v-layout>
     </v-card>
-    <a class="mt-2 grey--text" target="_blank" href="https://www.zoopla.com">View on Zoopla</a>
 
     <v-dialog v-model="dialog" width="500">
       <v-card style="border-radius: 20px;">
@@ -87,6 +95,14 @@ data() {
       'Asset Token',
       'Index Token'
     ],
+    photos: [
+        {
+          src: 'http://images.skyscrapercenter.com/building/towerpalacethreetowerg_lookup_mg.jpg'
+        },
+        {
+          src: 'http://post.phinf.naver.net/MjAxNzExMzBfMjc3/MDAxNTEyMDI0ODc3MDYx.1dkl_C3cI9QDPoUPjrbCFiYnsnXIXXGYfJH9nVs7fmYg.YZDpB75uh7RstRqE2ng9YG_xiP1GDYRH-o4Gxdwn4swg.JPEG/ITASs696SY2NdWBH15AEajk58W5w.jpg'
+        }
+      ],
     checkbox: false,
     init: function() {
       if (typeof web3 !== 'undefined') {
